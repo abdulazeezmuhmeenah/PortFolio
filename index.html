@@ -5,15 +5,16 @@
         <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
         <title>Abdul Azeez Muhmeenah</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     </head>
     <body>
         <nav>
             <h2>Muhmeenah</h2>
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#"><i class="fa-solid fa-code"></i> Skills</a>
+                <a href="#"><i class="fa-solid fa-laptop"></i> Projects</a>
+                <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
             </div>
         </nav>
 
@@ -69,14 +70,15 @@
         <section class="contact">
             <h2>Contact Us</h2>
 
-            <form>
-                <input type="text" placeholder="Your Name">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="045b732a-8a8a-4fec-90ff-566dd58916ea">
+                <input type="text" placeholder="Your Name" name="name">
 
-                <input type="email" placeholder="Your Email">
+                <input type="email" placeholder="Your Email" name="email">
 
-                <textarea placeholder="Your Message"></textarea>
+                <textarea placeholder="Your Message" name="message"></textarea>
 
-                <button>Send Message</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
         
